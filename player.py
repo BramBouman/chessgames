@@ -17,7 +17,7 @@ class TransformerPlayer(Player):
     def __init__(
         self,
         name: str = "TinyLMPlayer",
-        model_id: str = "./chess_llm_135M",
+        model_id: str = "BramBouman/chess_llm_135M",
         temperature: float = 0.01,
         max_new_tokens: int = 4,
     ):
@@ -147,3 +147,4 @@ class TransformerPlayer(Player):
 
         # fallback
         return self._random_legal(fen)
+
